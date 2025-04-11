@@ -5,42 +5,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Enter your name below. The text will appear in the browser tab! -->
   <title>Wesley Heltzel</title>
-  <!-- The link below is to a CSS (Cascading Style Sheet) file. You'll learn more about CSS next week! -->
   <link rel="stylesheet" href="./css/simple-grid.css">
+  <style>
+    .top-border {
+      width: 100%;
+      border-top: 4px solid #333;
+      background-color: #f4f4f4;
+      padding: 15px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .top-border h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .top-border p {
+      margin: 5px 0 0;
+      color: #666;
+      font-size: 1em;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Top Border About Me Section -->
+  <div class="top-border">
+    <h1>About Me</h1>
+    <p>Hey! I'm Wesley Heltzel — a CS student at Virginia Tech who loves code, MMA, and chill series nights.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/wesley-heltzel-485667286/" class="external-link" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+
   <div class="container">
     <div class="row">
+      <!-- Left Sidebar -->
       <div class="col-3">
-        <!-- This content will take up 3/12 (or 1/4) of the container -->
-        <!-- Fill in the info between the strong and li tags -->
-        <p>My name is <b class="cool-color">Wesley</b></p>
-        <p>I like three things:</p>
-        <ul>
-          <li>Coding</li>
-          <li>MMA</li>
-          <li>Binge Watching</li>
-        </ul>
-        <!-- Try adding a paragraph in the line below. Paragraph tags look like <p>paragraph content</p>. The paragraph should say, "I dislike three things:" -->
-        <p>I dislike three things:</p>
-        <ol>
-          <li>Anxiety</li>
-          <li>Procrastination</li>
-          <li>Busy Work</li>
-        </ol>
-        <!-- Now try adding a list of DISLIKES. The list should resemble the one on lines 21-26 above except instead of ul (unordered list), use ol tags (ordered list). Put li (list item) tags inside of the ol tags -->
+        <div style="border: 2px solid black; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
+          <p><strong>My name is <span style="color: #2c3e50;">Wesley</span></strong></p>
 
+          <p><strong>I like three things:</strong></p>
+          <ul style="color: #2ecc71; padding-left: 20px;">
+            <li>Coding</li>
+            <li>MMA</li>
+            <li>Binge Watching</li>
+          </ul>
+
+          <p><strong>I dislike three things:</strong></p>
+          <ul style="color: #e74c3c; padding-left: 20px;">
+            <li>Anxiety</li>
+            <li>Procrastination</li>
+            <li>Busy Work</li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Main Content Area -->
       <div class="col-9">
-        <!-- This content will take up 9/12 (or 2/3) of the container -->
-        <!-- On the blank line below, add a short paragraph about yourself, but this time use this FANTASTIC trick: Instead of typing out the paragraph tags, simply hit p, then tab (no spaces). Atom should generate paragraph tags for you! You can use this shortcut with any HTML tag. Try it!-->
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex officiis praesentium nam accusamus, vitae ratione perferendis vel sapiente nobis accusantium eligendi alias, dolorem a sit reiciendis explicabo, eos quibusdam amet saepe. Quaerat rerum, nam hic nulla nobis rem veritatis velit accusamus illum sint sit, repellendus accusantium atque. Consectetur aperiam, nesciunt. Temporibus voluptatibus voluptate voluptates sed qui sapiente atque enim rerum obcaecati non deleniti corporis, assumenda, sint incidunt, alias nostrum modi aspernatur optio aut earum. Molestiae saepe vel voluptas, veritatis, assumenda libero dignissimos, quia nulla eaque perspiciatis voluptates a ducimus aspernatur officiis animi iste. Nobis modi doloribus eaque quae quaerat dicta veniam hic, cupiditate asperiores molestias, reprehenderit iusto, cum explicabo rem inventore! Cum expedita libero, dolor cumque, eius fugiat odio deserunt ducimus earum magnam voluptatibus esse, similique reiciendis nihil consectetur perspiciatis. Maiores quos, repudiandae cum sit quidem repellat eaque vel inventore ipsam architecto velit eos porro natus sint, omnis harum aut, minus praesentium aliquid dolorum alias ad reiciendis. Facere excepturi provident placeat enim rerum ut dolorum sapiente dolor. Ea nisi asperiores error quasi odit quas architecto. Adipisci incidunt dolores pariatur praesentium veritatis a, voluptate, ex dignissimos est laudantium nisi, deserunt magnam non repellendus quasi! Omnis nisi distinctio necessitatibus ratione dolore nam.</p>
+        <!-- Blog Post -->
+        <div class="button toggle">Blog post</div>
+        <div class="slidedown">
+          <div class="description">
+            <h2>The Explosive Entrance of DeekSeek Artificial Intelligence</h2>
+            <p>
+              After years of GPT reigning supreme in the AI space, a new Artificial Intelligence called deepseek has
+              suddenly built a name for itself. Does it live up to the hype or is it just another fad?
+            </p>
+            <a href="https://medium.com/@wheltzel/the-explosive-entrance-of-deepseek-artificial-intelligence-3fedfa652d8f"
+              class="external-link" target="_blank">Read</a>
+          </div>
+        </div>
+
+        <!-- Podcast Section -->
+<div class="button toggle">Podcast</div>
+<div class="slidedown">
+  <div class="description">
+    <h2>Group Panda Podcast</h2>
+    <p>Discuss to Virginia Tech how AI might be used in education in the future.  Including but not limited to the good and the bad that AI can bring to the educational space.</p>
+    <a href="https://soundcloud.com" class="external-link" target="_blank">Listen</a>
+  </div>
+</div>
+        <!-- Personal Paragraph -->
+        <p>
+          My name is Wesley Heltzel, I enjoy coding, MMA, and binge watching shows. I'm currently in Computer Science
+          majoring in Secure Computing and trying my best to learn as much as I can here at Virginia Tech.
+        </p>
       </div>
-      <p>My name is Wesley Heltzel, I enjoy coding, MMA, and binge watching shows.  I'm currently in Computer Science majoring in Secure Computing and trying my best to learn as much as I can here at Virginia Tech.</p>
     </div>
   </div>
 </body>
