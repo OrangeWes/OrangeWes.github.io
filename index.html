@@ -1,101 +1,79 @@
 <!DOCTYPE html>
+<!-- This page is adapted from w3schools "How to make a link tree website https://www.w3schools.com/howto/howto_website_create_linktree.asp" -->
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wesley Heltzel</title>
-  <link rel="stylesheet" href="./css/simple-grid.css">
-  <style>
-    .top-border {
-      width: 100%;
-      border-top: 4px solid #333;
-      background-color: #f4f4f4;
-      padding: 15px 0;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .top-border h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    .top-border p {
-      margin: 5px 0 0;
-      color: #666;
-      font-size: 1em;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="main-text-color">
   <!-- Top Border About Me Section -->
   <div class="top-border">
+    <div class="image-container">
+      <img src="images/croppedyogadog.jpg" alt="Photo by wikimedia commons">
+    </div>
     <h1>About Me</h1>
     <p>Hey! I'm Wesley Heltzel — a CS student at Virginia Tech who loves code, MMA, and chill series nights.</p>
-    <p>
-      <a href="https://www.linkedin.com/in/wesley-heltzel-485667286/" class="external-link" target="_blank">LinkedIn</a>
+  </div>
+
+  <!-- Content container -->
+  <div class="container">
+    <div class="intro">
+      I'm <span class="name"><strong>Wesley Heltzel</strong></span>, a CS student into secure computing, UFC, and Netflix marathons.
+    </div>
+
+    <div class="section-header">
+      <h1>My work</h1>
+    </div>
+
+    <div class="links-container">
+      <!-- Blog Post -->
+      <div class="button toggle">Blog post</div>
+      <div class="slidedown">
+        <div class="description">
+          <h2>The Explosive Entrance of DeepSeek Artificial Intelligence</h2>
+          <p>
+            After years of GPT reigning supreme in the AI space, a new Artificial Intelligence called DeepSeek has
+            suddenly built a name for itself. Does it live up to the hype or is it just another fad?
+          </p>
+          <a href="https://medium.com/@wheltzel/the-explosive-entrance-of-deepseek-artificial-intelligence-3fedfa652d8f"
+            class="external-link" target="_blank">Read</a>
+        </div>
+      </div>
+
+      <!-- Podcast -->
+      <div class="button toggle">Podcast</div>
+      <div class="slidedown">
+        <div class="description">
+          <h2>Group Panda Podcast</h2>
+          <p>
+            Discussing how AI might reshape education at Virginia Tech—from breakthroughs to potential downsides.
+          </p>
+          <a href="https://soundcloud.com" class="external-link" target="_blank">Listen</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h1>More About Me</h1>
+    </div>
+
+    <div class="links-container">
+      <a href="https://www.linkedin.com/in/wesley-heltzel-485667286/" class="button" target="_blank">Linked In</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© Wesley Heltzel, 2024. Based on a design by <a
+        href="https://www.w3schools.com/howto/howto_website_create_linktree.asp" target="_blank">w3schools</a>.
     </p>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <!-- Left Sidebar -->
-      <div class="col-3">
-        <div style="border: 2px solid black; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-          <p><strong>My name is <span style="color: #2c3e50;">Wesley</span></strong></p>
-
-          <p><strong>I like three things:</strong></p>
-          <ul style="color: #2ecc71; padding-left: 20px;">
-            <li>Coding</li>
-            <li>MMA</li>
-            <li>Binge Watching</li>
-          </ul>
-
-          <p><strong>I dislike three things:</strong></p>
-          <ul style="color: #e74c3c; padding-left: 20px;">
-            <li>Anxiety</li>
-            <li>Procrastination</li>
-            <li>Busy Work</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Main Content Area -->
-      <div class="col-9">
-        <!-- Blog Post -->
-        <div class="button toggle">Blog post</div>
-        <div class="slidedown">
-          <div class="description">
-            <h2>The Explosive Entrance of DeekSeek Artificial Intelligence</h2>
-            <p>
-              After years of GPT reigning supreme in the AI space, a new Artificial Intelligence called deepseek has
-              suddenly built a name for itself. Does it live up to the hype or is it just another fad?
-            </p>
-            <a href="https://medium.com/@wheltzel/the-explosive-entrance-of-deepseek-artificial-intelligence-3fedfa652d8f"
-              class="external-link" target="_blank">Read</a>
-          </div>
-        </div>
-
-        <!-- Podcast Section -->
-<div class="button toggle">Podcast</div>
-<div class="slidedown">
-  <div class="description">
-    <h2>Group Panda Podcast</h2>
-    <p>Discuss to Virginia Tech how AI might be used in education in the future.  Including but not limited to the good and the bad that AI can bring to the educational space.</p>
-    <a href="https://soundcloud.com" class="external-link" target="_blank">Listen</a>
-  </div>
-</div>
-        <!-- Personal Paragraph -->
-        <p>
-          My name is Wesley Heltzel, I enjoy coding, MMA, and binge watching shows. I'm currently in Computer Science
-          majoring in Secure Computing and trying my best to learn as much as I can here at Virginia Tech.
-        </p>
-      </div>
-    </div>
-  </div>
+  <script type="text/javascript" src="js/slider.js"></script>
 </body>
 
 </html>
