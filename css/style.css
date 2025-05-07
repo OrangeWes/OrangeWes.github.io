@@ -3,7 +3,7 @@
     --secondaryText: #659812;
     --primary: #1394db;
     --secondary: #0646f6; 
-    --buttonHover: rgba(162, 18, 18, 0.4);
+    --buttonHover: #0646f6; ;
     --smallButtonHover: rgba(0, 0, 0, 0.25);
 }
 
